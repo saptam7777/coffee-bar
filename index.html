@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coffee Bar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Coffee Bar</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Menu</a>
+      <a href="#">Contact</a>
+      <span id="cart-count">Cart: 0</span>
+      <button id="theme-toggle" type="button">Toggle Dark Mode</button>
+    </nav>
+  </header>
+  <main>
+    <section id="menu">
+      <h2>Our Coffee Menu</h2>
+      <div class="menu-items" id="menu-items">
+        <!-- Menu items will be populated by JavaScript -->
+      </div>
+    </section>
+    <section id="cart">
+      <h2>Your Cart</h2>
+      <ul id="cart-items"></ul>
+      <p id="cart-total"></p>
+      <button id="empty-cart-btn" type="button">Empty Cart</button>
+      <button id="checkout-btn" type="button">Checkout</button>
+    </section>
+    <!-- Modal -->
+    <div id="modal">
+      <div class="modal-content">
+        <p id="modal-msg">Order Confirmed! Thank you for ordering.</p>
+        <button id="close-modal" type="button">Close</button>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
